@@ -1,0 +1,8 @@
+{
+	"default": "https://vanhack.ca/",
+	"redirects": {
+		"covid-signin": "https://docs.google.com/forms/d/e/1FAIpQLSdsUuvj5WeoG15CTkwbnI8EL_15qmtQE5Sc9Je_EvVYl8FiBA/viewform",
+		"liability-waiver": "https://docs.google.com/forms/d/e/1FAIpQLScW6VCvGgo5xNSwp-y-t6WA4Xg0SxdzBeJjNhwYzxWCYlpgvg/viewform",
+		"wiki": "https://wiki.vanhack.ca"
+	}
+}
