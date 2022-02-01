@@ -1,5 +1,4 @@
 var express = require('express')
-var path = require('path')
 var cookieParser = require('cookie-parser')
 var logger = require('morgan')
 const { check } = require('express-validator')
@@ -18,15 +17,15 @@ app.use(cookieParser())
 app.set('views', './views')
 app.set('view engine', 'ejs')
 
-app.get('/', function (req, res, next) {
+app.get('/', function (req, res) {
 	res.redirect(config.default)
 })
 
 app.get(
 	'/:marker',
 	[check('marker').isString().trim().escape()],
-	function (req, res, next) {
-		let marker = req.params.marker
+	function (req, res) {
+		const marker = req.params.marker
 
 		if (
 			marker !== undefined &&
@@ -41,8 +40,8 @@ app.get(
 app.get(
 	'/:marker/qr',
 	[check('marker').isString().trim().escape()],
-	function (req, res, next) {
-		let marker = req.params.marker
+	function (req, res) {
+		const marker = req.params.marker
 
 		if (
 			marker !== undefined &&
